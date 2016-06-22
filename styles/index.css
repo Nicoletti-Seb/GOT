@@ -1,0 +1,186 @@
+/**
+	@author Sébastien Nicoletti
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+    height: 100vh;
+    background-color: black;
+    font-family: Abel;
+    color: white;
+}
+
+/* Header */
+#header {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	height: 400px;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: 50% 10%;
+	background-repeat: no-repeat;
+	color:black;
+}
+
+#header .container {
+    margin: auto;
+    padding: 35px 20px;
+    text-align: center;
+    background-color: rgba(80,120,160,0.5);
+}
+
+#header .container .title {
+	font-family:gotFont;
+	font-size: 40px;
+	margin: 0px;
+}
+
+#header .container .sub-title {
+	font-size: 14px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+#header .refresh{
+	position: absolute;	
+    right: 10px;
+    top: 20px;
+    z-index: 2;
+}
+
+
+/* Seasons */
+.seasons{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Seasons titles */
+
+.seasons .title-season{
+	width: 40%;
+	min-width: 300px;
+	display: flex;
+	align-items: flex-start;
+	text-align: center;
+	font-family:gotFont;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.seasons .title-season .container{
+	margin:auto;
+	max-width: 200px;
+}
+
+.seasons .title-season .number-season{
+	font-size: 140px;
+	color: rgb(13,31, 68);
+	vertical-align: top;
+	line-height: 0.5;
+}
+
+/* Seasons episodes */
+.seasons .episodes{
+	width: 60%;
+	min-width: 300px;
+	max-width: 500px; 
+	height: 100%;
+	margin: auto;
+
+}
+
+.seasons .episodes hr{
+	width:50px;
+	border-color: rgb(39, 43, 44);
+}
+
+.episode{
+	display: flex;
+	padding: 10px;
+}
+
+.episode .episode_desc, .episode .episode_like{
+	width: 50%;
+}
+
+.episode .episode_like{
+	text-align: right;
+}
+
+.episode .episode_like .container-like{
+	display: inline-block;
+	border: solid;
+	border-width: 1px;
+	border-radius: 20px;
+	padding: 5px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.episode .episode_desc .episode_desc_time{
+	color: gray;
+	display: block;
+}
+
+/* Buttons */
+.refresh{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.like{
+    background-image: url(../images/like.png);
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.like:active, .container-like:active, .refresh:active{
+	opacity: 0.5;
+}
+
+/* Fonts */
+@font-face {
+    font-family: gotFont;
+    src: url(../fonts/game_of_thrones-webfont.woff);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px)
+{
+    .seasons {
+	    display: block;
+	    flex-wrap: none;
+	    height: auto;
+	}
+
+	.seasons .title-season {
+	    width: 100%;
+	    font-size: 50px;
+	    height: auto;
+	    display: block;
+	}
+
+	.seasons .title-season .container {
+	    max-width: none;
+	    margin: 40px 0px;
+	}
+
+	.seasons .title-season .number-season {
+		font-size: 150px;
+	    vertical-align: initial;
+	}
+
+	.seasons .episodes {
+	    width: initial;
+	}
+}

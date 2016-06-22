@@ -1,0 +1,55 @@
+{
+	"id": "097d2086-c008-dd9c-0e8b-1e1aa0cd81fe",
+	"name": "Test_got_serveur",
+	"description": "",
+	"order": [
+		"8b69abc6-5f48-f369-1d09-f720feef7454",
+		"66bcac1c-d5d1-400d-9bc7-606752f977d7"
+	],
+	"folders": [],
+	"timestamp": 1466338894378,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "66bcac1c-d5d1-400d-9bc7-606752f977d7",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:3000/like",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "097d2086-c008-dd9c-0e8b-1e1aa0cd81fe",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:3000/like",
+			"description": "Test service \"like\"\n\nDescription du service:\n    Un web service HTTP qui permet d'incrémenter le like\n    d'un épisode",
+			"descriptionFormat": "html",
+			"time": 1466348477057,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"id\" : 0\n}"
+		},
+		{
+			"id": "8b69abc6-5f48-f369-1d09-f720feef7454",
+			"headers": "",
+			"url": "http://localhost:3000/episodes/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1466348525178,
+			"name": "http://localhost:3000/episodes",
+			"description": "Test du service \"épisodes\"\r\n\r\nDescription du service:\r\n    Un web service HTTP sur l'url localhost:3000/episodes\r\nqui retourne le tableau d'épisodes.",
+			"collectionId": "097d2086-c008-dd9c-0e8b-1e1aa0cd81fe",
+			"responses": []
+		}
+	]
+}

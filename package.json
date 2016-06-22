@@ -1,0 +1,15 @@
+{
+  "name": "got",
+  "version": "1.0.0",
+  "description": "Deux fonts sont utilisées : \r \tPour les titres (\"game of thrones\" et \"season 6\") utiliser la font \"game_of_thrones-webfont\" presente dans le dossier font \r \tPour tous les autres textes utiliser la google font \"Abel\"",
+  "main": "got_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.14.0"
+  }
+}
